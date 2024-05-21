@@ -4,11 +4,11 @@ import Posts from "./Posts";
 
 const Home = () => {
   return (
-    <div className="container">
+    <>
       <Header />
       <StoriesBar />
       <Posts />
-    </div>
+    </>
   );
 };
 

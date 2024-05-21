@@ -50,7 +50,7 @@ const StoriesBar = () => {
     <>
       <div
         id="StoriesBar"
-        className="flex items-center flex-row-reverse gap-5 py-2 overflow-x-scroll h-32 mx-3"
+        className="flex items-center flex-row-reverse gap-5 py-2 overflow-x-scroll h-32"
       >
         <div className="relative h-16 min-w-16 overflow-hidden ms-1">
           <img
