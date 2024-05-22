@@ -56,7 +56,7 @@ const StoriesBar = () => {
     <>
       <div
         id="StoriesBar"
-        className="flex items-center flex-row-reverse gap-3 py-3 overflow-x-scroll"
+        className="flex items-center flex-row-reverse gap-3 py-1 overflow-x-scroll"
       >
         <Link to={"/"} className="relative min-w-16 overflow-hidden ms-1">
           <img
