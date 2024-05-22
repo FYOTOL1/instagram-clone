@@ -30,18 +30,24 @@ const StoriesBar = () => {
       <>
         <Link
           to={"/"}
-          className={`relative h-14 min-w-14 transition-all cursor-pointer ${
-            e.watched
-              ? "outline outline-1 outline-gray-200 hover:outline-gray-500"
-              : "[outline:3px_solid_red] hover:outline-red-300"
-          } outline-offset-[3px] rounded-full`}
+          className={`relative flex flex-col items-center min-w-16 cursor-pointer rounded-full`}
         >
           <img
-            className="h-14 w-14 rounded-full object-fill"
+            className={`h-14 w-14 rounded-full object-fill transition-all outline-offset-[2px] ${
+              e.watched
+                ? "outline outline-1 outline-gray-200 hover:outline-gray-500"
+                : "outline outline-3 outline-red-600 hover:outline-red-400"
+            }`}
             src={e.avatar}
             alt="Avatar"
           />
-          <p className="text-xs text-center text-gray-500 mt-1">{e.username}</p>
+          <p
+            className={`absolute bottom-[-20px] text-xs text-center text-gray-500 mt-1 ${
+              e.watched ? "text-gray-600" : "text-black"
+            }`}
+          >
+            {e.username.slice(0, 20)}
+          </p>
         </Link>
       </>
     ));
@@ -50,16 +56,16 @@ const StoriesBar = () => {
     <>
       <div
         id="StoriesBar"
-        className="flex items-center flex-row-reverse gap-5 py-2 overflow-x-scroll h-32"
+        className="flex items-center flex-row-reverse gap-3 py-3 overflow-x-scroll"
       >
-        <div className="relative h-16 min-w-16 overflow-hidden ms-1">
+        <Link to={"/"} className="relative min-w-16 overflow-hidden ms-1">
           <img
             className="h-16 w-16 rounded-full object-fill"
             src="/me.jpg"
             alt="Me"
           />
           <i className="fa-solid fa-plus absolute bottom-0 flex items-center justify-center text-xs outline outline-3 outline-white w-5 h-5 text-white bg-blue-500 rounded-full"></i>
-        </div>
+        </Link>
         {renderStories}
       </div>
     </>

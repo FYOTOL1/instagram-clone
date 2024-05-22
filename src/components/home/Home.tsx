@@ -6,7 +6,9 @@ const Home = () => {
   return (
     <>
       <Header />
+      <hr />
       <StoriesBar />
+      <hr />
       <Posts />
     </>
   );
