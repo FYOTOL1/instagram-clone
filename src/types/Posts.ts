@@ -7,12 +7,10 @@ interface IComment {
   date: string;
 }
 
-interface IPosts {
+export interface IPosts {
   id: number;
   username: string;
   avatar: string;
   likes: number;
   comments: IComment[];
 }
-
-export type { IPosts };

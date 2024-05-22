@@ -19,7 +19,7 @@
     "paths": {
       "@components/*": ["src/components/*"],
       "@pages/*": ["src/pages/*"],
-      "@types/*": ["src/components/types/*"]
+      "@types/*": ["src/types/*"]
     },
 
     /* Linting */
