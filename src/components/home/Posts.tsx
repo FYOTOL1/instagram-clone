@@ -1,8 +1,8 @@
-import { IPosts } from "@types/Posts";
+import { TPosts } from "@customTypes/Posts.ts";
 import PostCard from "./PostCard";
 
 const Posts = () => {
-  const posts: IPosts[] = [
+  const posts: TPosts[] = [
     {
       id: 1,
       username: "Ahmed",
