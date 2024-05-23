@@ -35,11 +35,11 @@ const PostCard = ({ id, username, avatar, likes, date }: TPosts) => {
 
         <div className=" container flex items-center justify-between flex-row-reverse h-10 text-2xl">
           <div className="flex items-center flex-row-reverse gap-3">
-            <i className="fa-regular fa-heart"></i>
-            <i className="fa-regular fa-comment"></i>
-            <i className="fa-regular fa-paper-plane"></i>
+            <i className="fa-regular fa-heart text-gray-800"></i>
+            <i className="fa-regular fa-comment text-gray-800"></i>
+            <i className="fa-regular fa-paper-plane text-gray-800"></i>
           </div>
-          <i className="fa-regular fa-bookmark"></i>
+          <i className="fa-regular fa-bookmark text-gray-800"></i>
         </div>
       </div>
     </>
