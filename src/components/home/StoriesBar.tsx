@@ -27,7 +27,7 @@ const StoriesBar = () => {
           className={`relative flex flex-col items-center min-w-16 cursor-pointer rounded-full`}
         >
           <img
-            className={`h-14 w-14 rounded-full object-fill transition-all outline-offset-[2px] ${
+            className={`h-14 w-14 rounded-full object-fill transition-all outline-offset-[3px] ${
               e.watched
                 ? "outline outline-[1px] outline-gray-200 hover:outline-gray-500"
                 : "outline outline-[3px] outline-red-600 hover:outline-red-400"
