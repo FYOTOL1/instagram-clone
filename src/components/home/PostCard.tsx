@@ -1,8 +1,6 @@
 import { TPosts } from "@customTypes/Posts.ts";
 
 const PostCard = ({ id, username, avatar, likes, date, comments }: TPosts) => {
-  console.log(likes);
-
   const renderTopComments = comments.slice(0, 3).map((e) => (
     <>
       <div className="flex justify-between flex-row-reverse text-xs">
