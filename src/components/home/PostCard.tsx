@@ -13,6 +13,7 @@ const PostCard = ({ id, username, avatar, likes, date }: TPosts) => {
           className="h-full w-full object-cover bg-[#111]"
           src={avatar}
           alt="Error"
+          loading="lazy"
         />
 
         <div className="container absolute top-0 bottom-0 flex flex-col justify-between w-full">
@@ -21,9 +22,14 @@ const PostCard = ({ id, username, avatar, likes, date }: TPosts) => {
               <p>Follow</p>
             </button>
             <div className="flex items-center flex-row-reverse gap-2 text-white">
-              <img className="w-8 h-8 rounded-full" src={avatar} alt="Error" />
-              <div className="text-sm text-end">
-                <p>{username}</p>
+              <img
+                className="w-8 h-8 rounded-full shadow-sm"
+                src={avatar}
+                alt="Error"
+                loading="lazy"
+              />
+              <div className="text-sm">
+                <p className="text-end">{username}</p>
                 <p className="text-xs">{date}</p>
               </div>
             </div>
