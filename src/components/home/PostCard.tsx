@@ -22,7 +22,7 @@ const PostCard = ({ id, username, avatar, likes, date }: TPosts) => {
             </button>
             <div className="flex items-center flex-row-reverse gap-2 text-white">
               <img className="w-8 h-8 rounded-full" src={avatar} alt="Error" />
-              <div className="text-sm text-right">
+              <div className="text-sm text-end">
                 <p>{username}</p>
                 <p className="text-xs">{date}</p>
               </div>
