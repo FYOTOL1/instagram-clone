@@ -1,6 +1,6 @@
 import { TPosts } from "@customTypes/Posts.ts";
 
-const PostCard = ({ id, username, avatar, likes, date }: TPosts) => {
+const PostCard = ({ id, username, avatar, date }: TPosts) => {
   return (
     <>
       <div
