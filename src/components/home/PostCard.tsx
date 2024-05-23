@@ -15,7 +15,7 @@ const PostCard = ({ id, username, avatar, likes, date }: TPosts) => {
 
         <div className="container absolute top-0 bottom-0 flex flex-col justify-between w-full">
           <div className="flex justify-between items-center py-2">
-            <p>a</p>
+            <p>{likes}</p>
             <div className="flex items-center flex-row-reverse gap-2 text-white">
               <img className="w-8 h-8 rounded-full" src={avatar} alt="Error" />
               <div className="text-sm text-right">
