@@ -33,7 +33,7 @@ const PostCard = ({ id, username, avatar, likes, date }: TPosts) => {
           </div>
         </div>
 
-        <div className=" container flex items-center justify-between flex-row-reverse h-10 text-xl">
+        <div className=" container flex items-center justify-between flex-row-reverse h-10 text-2xl">
           <div className="flex items-center flex-row-reverse gap-3">
             <i className="fa-regular fa-heart"></i>
             <i className="fa-regular fa-comment"></i>
