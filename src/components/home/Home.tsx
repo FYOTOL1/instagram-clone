@@ -7,7 +7,7 @@ const Home = () => {
     <>
       <Header />
       <StoriesBar />
-      <hr />
+      <hr className="mt-2" />
       <Posts />
     </>
   );
