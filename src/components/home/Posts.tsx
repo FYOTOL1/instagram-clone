@@ -8,7 +8,7 @@ const Posts = () => {
       username: "Ahmed",
       avatar: "/post-1.jpg",
       likes: 451.5432,
-      date: new Date().toLocaleDateString(),
+      date: new Date().toLocaleString(),
       comments: [
         {
           id: 1,
@@ -16,7 +16,7 @@ const Posts = () => {
           avatar: "/me.jpg",
           comment: "Wow I Like it",
           likes: 300,
-          date: new Date().toLocaleDateString(),
+          date: new Date().toLocaleString(),
         },
       ],
     },
@@ -25,7 +25,7 @@ const Posts = () => {
       username: "Ahmed",
       avatar: "/cat.jpg",
       likes: 451.5432,
-      date: new Date().toLocaleDateString(),
+      date: new Date().toLocaleString(),
       comments: [
         {
           id: 1,
@@ -33,7 +33,7 @@ const Posts = () => {
           avatar: "/me.jpg",
           comment: "Wow I Like it",
           likes: 300,
-          date: new Date().toLocaleDateString(),
+          date: new Date().toLocaleString(),
         },
       ],
     },
