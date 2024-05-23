@@ -5,9 +5,9 @@ const PostCard = ({ id, username, avatar, likes, date }: TPosts) => {
 
   return (
     <>
-      <div key={id} className="relative w-full max-w-[600px] h-[700px]">
+      <div key={id} className="relative w-full max-w-[600px] h-[800px]">
         <img
-          className="h-full w-full object-cover bg-[#111]"
+          className="w-full object-cover bg-[#111] h-[700px]"
           src={avatar}
           alt="Error"
           loading="lazy"
@@ -31,6 +31,15 @@ const PostCard = ({ id, username, avatar, likes, date }: TPosts) => {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className=" container flex items-center justify-between flex-row-reverse h-10 text-xl">
+          <div className="flex items-center flex-row-reverse gap-3">
+            <i className="fa-regular fa-heart"></i>
+            <i className="fa-regular fa-comment"></i>
+            <i className="fa-regular fa-paper-plane"></i>
+          </div>
+          <i className="fa-regular fa-bookmark"></i>
         </div>
       </div>
     </>
