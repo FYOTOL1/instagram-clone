@@ -1,8 +1,6 @@
 import { IStories } from "@customTypes/Stories";
 import { Link } from "react-router-dom";
 
-
-
 const StoriesBar = () => {
   const stories: IStories[] = [
     { id: 1, username: "Ahmed", avatar: "/me.jpg", watched: false },
@@ -31,8 +29,8 @@ const StoriesBar = () => {
           <img
             className={`h-14 w-14 rounded-full object-fill transition-all outline-offset-[2px] ${
               e.watched
-                ? "outline outline-1 outline-gray-200 hover:outline-gray-500"
-                : "outline outline-3 outline-red-600 hover:outline-red-400"
+                ? "outline outline-[1px] outline-gray-200 hover:outline-gray-500"
+                : "outline outline-[3px] outline-red-600 hover:outline-red-400"
             }`}
             src={e.avatar}
             alt="Avatar"
