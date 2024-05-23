@@ -5,9 +5,12 @@ const PostCard = ({ id, username, avatar, likes, date, comments }: TPosts) => {
 
   const renderTopComments = comments.slice(0, 3).map((e) => (
     <>
-      <div className="flex justify-end gap-1 text-xs">
-        <p className="text-gray-800">{e.comment.slice(0, 60)}</p>
-        <p className="font-semibold">{e.username}</p>
+      <div className="flex justify-between flex-row-reverse text-xs">
+        <div className="flex justify-end gap-1">
+          <p className="text-gray-800">{e.comment.slice(0, 60)}</p>
+          <p className="font-semibold">{e.username}</p>
+        </div>
+        <i className="fa-regular fa-heart"></i>
       </div>
     </>
   ));

@@ -58,7 +58,7 @@ const Posts = () => {
       username: "Ahmed",
       avatar: "/me.jpg",
       likes: 451.5432,
-      date: new Date().toLocaleDateString(),
+      date: "20/11/2023",
       comments: [
         {
           id: 1,
