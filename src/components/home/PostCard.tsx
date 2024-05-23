@@ -5,10 +5,7 @@ const PostCard = ({ id, username, avatar, likes, date }: TPosts) => {
 
   return (
     <>
-      <div
-        key={id}
-        className="relative w-full max-w-[600px] outline outline-1 h-[700px]"
-      >
+      <div key={id} className="relative w-full max-w-[600px] h-[700px]">
         <img
           className="h-full w-full object-cover bg-[#111]"
           src={avatar}
