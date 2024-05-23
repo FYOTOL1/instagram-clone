@@ -20,7 +20,7 @@ const PostCard = ({ id, username, avatar, likes, date }: TPosts) => {
             </button>
             <div className="flex items-center flex-row-reverse gap-2 text-white">
               <img
-                className="w-8 h-8 rounded-full shadow-sm"
+                className="w-8 h-8 object-cover rounded-full shadow-sm"
                 src={avatar}
                 alt="Error"
                 loading="lazy"
