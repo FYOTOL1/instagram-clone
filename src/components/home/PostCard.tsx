@@ -28,9 +28,9 @@ const PostCard = ({ id, username, avatar, likes, date }: TPosts) => {
                 alt="Error"
                 loading="lazy"
               />
-              <div className="text-sm">
-                <p className="text-end">{username}</p>
-                <p className="text-[10px]">{date}</p>
+              <div className="flex items-end flex-col text-sm">
+                <p>{username}</p>
+                <p className="text-xs">{date}</p>
               </div>
             </div>
           </div>
