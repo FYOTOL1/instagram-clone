@@ -18,6 +18,22 @@ const Posts = () => {
           likes: 300,
           date: "20/11/2023",
         },
+        {
+          id: 2,
+          username: "Khalid",
+          avatar: "/me.jpg",
+          comment: "Creative",
+          likes: 300,
+          date: "20/11/2023",
+        },
+        {
+          id: 3,
+          username: "Ahmed",
+          avatar: "/me.jpg",
+          comment: "Amazing",
+          likes: 300,
+          date: "20/11/2023",
+        },
       ],
     },
     {
