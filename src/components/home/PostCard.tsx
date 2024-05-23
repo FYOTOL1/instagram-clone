@@ -30,7 +30,7 @@ const PostCard = ({ id, username, avatar, likes, date }: TPosts) => {
               />
               <div className="text-sm">
                 <p className="text-end">{username}</p>
-                <p className="text-xs">{date}</p>
+                <p className="text-[10px]">{date}</p>
               </div>
             </div>
           </div>
