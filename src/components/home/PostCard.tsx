@@ -19,7 +19,7 @@ const PostCard = ({ id, username, avatar, likes, date, comments }: TPosts) => {
     <>
       <div key={id} className="relative w-full max-w-[600px]">
         <img
-          className="w-full object-cover bg-[#111] h-[700px]"
+          className="w-full object-cover bg-[#111] h-[800px]"
           src={avatar}
           alt="Error"
           loading="lazy"

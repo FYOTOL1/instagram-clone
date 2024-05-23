@@ -56,7 +56,7 @@ const Posts = () => {
     {
       id: 3,
       username: "Ahmed",
-      avatar: "/me.jpg",
+      avatar: "/car.jpg",
       likes: 451.5432,
       date: "20/11/2023",
       comments: [
