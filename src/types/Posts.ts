@@ -12,5 +12,6 @@ export type TPosts = {
   username: string;
   avatar: string;
   likes: number;
+  date: string;
   comments: TComment[];
 };

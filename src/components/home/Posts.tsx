@@ -6,8 +6,9 @@ const Posts = () => {
     {
       id: 1,
       username: "Ahmed",
-      avatar: "/me.jpg",
+      avatar: "/post-1.jpg",
       likes: 451.5432,
+      date: new Date().toLocaleDateString(),
       comments: [
         {
           id: 1,
@@ -22,8 +23,9 @@ const Posts = () => {
     {
       id: 2,
       username: "Ahmed",
-      avatar: "/me.jpg",
+      avatar: "/cat.jpg",
       likes: 451.5432,
+      date: new Date().toLocaleDateString(),
       comments: [
         {
           id: 1,
@@ -40,6 +42,7 @@ const Posts = () => {
       username: "Ahmed",
       avatar: "/me.jpg",
       likes: 451.5432,
+      date: new Date().toLocaleDateString(),
       comments: [
         {
           id: 1,
@@ -57,7 +60,7 @@ const Posts = () => {
 
   return (
     <>
-      <div className="flex items-center flex-col gap-6 w-full px-3 mt-5">
+      <div className="flex items-center flex-col gap-6 w-full mt-5">
         {renderPosts}
       </div>
     </>
