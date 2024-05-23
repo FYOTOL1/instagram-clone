@@ -1,11 +1,7 @@
+import { IStories } from "@customTypes/Stories";
 import { Link } from "react-router-dom";
 
-interface IStories {
-  id: number;
-  username: string;
-  avatar: string;
-  watched: boolean;
-}
+
 
 const StoriesBar = () => {
   const stories: IStories[] = [
@@ -56,7 +52,7 @@ const StoriesBar = () => {
     <>
       <div
         id="StoriesBar"
-        className="flex items-center flex-row-reverse gap-3 py-1 overflow-x-scroll"
+        className="flex items-center flex-row-reverse gap-3 py-2 pb-3 overflow-x-scroll"
       >
         <Link to={"/"} className="relative min-w-16 overflow-hidden ms-1">
           <img
